@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,800&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Bricolage Grotesque", sans-serif;
+  background-image: url("/images/22597.jpg");
+  background-size: 220rem;
+}
+
+/* GRID CSS START */
+.drum-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: minmax(200px, 350px) minmax(300px, 500px) 1fr;
+
+  grid-area: "hr hr hr hr hr hr" "mu mu mu mu mu mu" "fo fo fo fo fo fo";
+
+  width: 85%;
+  margin: auto;
+}
+
+.drum-header {
+  grid-area: "hr";
+}
+.drum-music {
+  grid-area: "mu";
+}
+.drum-footer {
+  grid-area: "fo";
+}
+/* GRID CSS END */
+
+/* HEADER CSS START */
+
+#drum-id-container {
+  background: rgba(244, 209, 96, 0.5);
+  border-radius: 12rem;
+}
+
+#drum-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#drum-title {
+  font-size: 6rem;
+  margin-top: 214px;
+  border-radius: 2rem;
+  margin-left: -60rem;
+}
+
+span {
+  background-color: #fff;
+  color: rgb(197, 22, 5);
+  border-radius: 2rem;
+  margin-left: -1rem;
+}
+
+.drum-img {
+  max-width: 100%;
+  width: 195px;
+  margin: 51px auto auto;
+  filter: brightness(0) invert(1);
+  margin-left: 30rem;
+  margin-top: 4rem;
+}
+
+/* HEADER CSS END */
+
+/* MAIN CSS START */
+
+.set {
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.site {
+  font-size: 0.7rem;
+  font-family: "Nanum Gothic", sans-serif;
+  margin-top: 0;
+}
+
+.wClass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.drumW {
+  width: 2rem;
+  margin-bottom: -1.1rem;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+
+.drum {
+  font-family: "Orbitron", sans-serif;
+  outline: none;
+  width: 150px;
+  height: 150px;
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgb(103, 65, 136);
+  border-radius: 2rem;
+
+  border: none;
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(249, 245, 246);
+}
+
+.drum .wClass .drumW {
+  transition: all 0.5s ease;
+}
+/* MAIN CSS END */
+
+/* FOOTER CSS START  */
+
+.drum-copyright {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 0.7rem;
+  margin-top: -5rem;
+  background-color: #fff;
+  margin-right: 60rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+}
+/* FOOTER CSS END */
+
+/* MEDIA QUERY SECTION START */
+
+/* NOTE: THERE ARE 7 MEDIA QUERY */
+/* .1 */
+@media screen and (max-width: 814px) {
+  .drum-copyright {
+    margin-top: 6rem;
+  }
+}
+
+/* .2 */
+@media (min-width: 594px) and (max-width: 784px) {
+  .drum-copyright {
+    margin-top: 17rem;
+  }
+
+  #drum-title {
+    margin-left: -25rem;
+  }
+  .drum-img {
+    margin-top: 4rem;
+    margin-left: 8rem;
+  }
+
+  .set {
+    margin: 1rem 5rem 1rem;
+  }
+}
+
+/* .3 */
+@media (min-width: 581px) and (max-width: 593px) {
+  .drum-copyright {
+    margin-top: 17rem;
+  }
+
+  .drum-img {
+    margin: 4rem 1rem auto 4rem;
+  }
+
+  #drum-title {
+    font-size: 5.7rem;
+    margin-top: 214px;
+    margin-left: -23.8rem;
+  }
+
+  .set {
+    margin: 1rem 4.67rem 3rem;
+  }
+}
+
+/* .4 */
+@media (min-width: 481px) and (max-width: 580px) {
+  .drum-copyright {
+    margin-top: 17rem;
+  }
+
+  .drum-img {
+    margin: 4rem 1rem auto 4rem;
+  }
+
+  #drum-title {
+    font-size: 5.7rem;
+    margin-top: 214px;
+    margin-left: -18.8rem;
+  }
+
+  .set {
+    margin: 1rem 1.6rem 3rem;
+  }
+}
+/* .5 */
+@media (min-width: 426px) and (max-width: 480px) {
+  .drum-copyright {
+    margin-top: 17rem;
+  }
+
+  .drum-img {
+    margin: 4rem 1rem auto 4rem;
+  }
+
+  #drum-title {
+    font-size: 5.7rem;
+    margin-top: 214px;
+    margin-left: -15.8rem;
+  }
+
+  .set {
+    margin: 1rem 0.6rem 3rem;
+  }
+}
+
+/* .6 */
+@media (min-width: 391px) and (max-width: 425px) {
+  .drum-copyright {
+    margin-top: 17rem;
+  }
+
+  .drum-img {
+    margin: 4rem 1rem auto 4rem;
+  }
+  #drum-title {
+    font-size: 5.7rem;
+    margin-top: 214px;
+    margin-left: -15.8rem;
+  }
+
+  .set {
+    margin: 1rem -0.33rem 3rem;
+  }
+}
+
+/* .7 */
+@media screen and (max-width: 390px) {
+  .drum-copyright {
+    margin-top: 47rem;
+  }
+
+  .drum-img {
+    margin: 5rem auto auto 2rem;
+  }
+
+  #drum-title {
+    font-size: 4rem;
+    margin-top: 283px;
+    margin-left: -15rem;
+  }
+
+  .set {
+    margin: 1rem 3rem 1rem;
+  }
+}
+
+/* MEDIA QUERY SECTION END */
